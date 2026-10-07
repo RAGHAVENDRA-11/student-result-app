@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span>SR</span>
+            <div>
+                <h1>Student Result Portal</h1>
+                <p>Academic Performance Management System</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Page Heading -->
+        <section class="page-title">
+            <h2>Student Academic Result</h2>
+            <p>View student details, subject marks, grades and overall performance.</p>
+        </section>
+
+        <!-- Student Information -->
+        <section class="card student-info">
+
+            <div class="card-header">
+                <h3>Student Information</h3>
+            </div>
+
+            <div class="student-grid">
+
+                <div class="info-item">
+                    <span class="label">Student Name</span>
+                    <span class="value">Raghavendra R</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Register Number</span>
+                    <span class="value">711724UCS218</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Department</span>
+                    <span class="value">Computer Science Engineering</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Semester</span>
+                    <span class="value">V Semester</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Academic Year</span>
+                    <span class="value">2026 - 2027</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Institution</span>
+                    <span class="value">KGISL Institute of Technology</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Subject Results -->
+        <section class="card">
+
+            <div class="card-header">
+                <h3>Subject-wise Results</h3>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>CS501</td>
+                            <td>Computer Networks</td>
+                            <td>86</td>
+                            <td class="grade">A</td>
+                            <td>
+                                <span class="status pass">PASS</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>CS502</td>
+                            <td>DevOps and Software Development</td>
+                            <td>91</td>
+                            <td class="grade">A+</td>
+                            <td>
+                                <span class="status pass">PASS</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>CS503</td>
+                            <td>Cryptography and Cyber Security</td>
+                            <td>78</td>
+                            <td class="grade">B+</td>
+                            <td>
+                                <span class="status pass">PASS</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>CS504</td>
+                            <td>Internet Programming</td>
+                            <td>88</td>
+                            <td class="grade">A</td>
+                            <td>
+                                <span class="status pass">PASS</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>CS505</td>
+                            <td>UI/UX Design</td>
+                            <td>82</td>
+                            <td class="grade">A</td>
+                            <td>
+                                <span class="status pass">PASS</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result Summary -->
+        <section class="summary-grid">
+
+            <div class="summary-card">
+                <div class="summary-icon">📊</div>
+                <div>
+                    <p>Total Marks</p>
+                    <h3 id="totalMarks">425 / 500</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon">📈</div>
+                <div>
+                    <p>Percentage</p>
+                    <h3 id="percentage">85%</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon">⭐</div>
+                <div>
+                    <p>Overall Grade</p>
+                    <h3 id="overallGrade">A</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon">✓</div>
+                <div>
+                    <p>Result</p>
+                    <h3 class="result-pass">PASS</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Performance -->
+        <section class="card performance">
+
+            <div class="card-header">
+                <h3>Performance Overview</h3>
+            </div>
+
+            <div class="performance-content">
+
+                <div class="progress-section">
+
+                    <div class="progress-label">
+                        <span>Overall Performance</span>
+                        <strong>85%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+
+                </div>
+
+                <div class="performance-message">
+
+                    <div class="message-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h4>Excellent Performance!</h4>
+                        <p>
+                            The student has successfully completed all subjects
+                            with a good academic performance.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result Information -->
+        <section class="result-note">
+
+            <h3>Result Information</h3>
+
+            <ul>
+                <li>PASS indicates that the student has successfully cleared the subject.</li>
+                <li>Grades are calculated based on the marks obtained.</li>
+                <li>The overall percentage is calculated from the total marks.</li>
+                <li>This result is generated through the Student Result Portal.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Student Result Portal
+        </p>
+
+        <p>
+            DevOps Case Study - Student Result Web Application
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
