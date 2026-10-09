@@ -8,6 +8,8 @@ pipeline {
         CONTAINER_NAME = "student-result-container"
         HOST_PORT = "8081"
         CONTAINER_PORT = "80"
+        MINIKUBE_HOME = "C:/Users/Raghav/.minikube"
+        KUBECONFIG = "C:/Users/Raghav/.kube/config"
     }
 
     stages {
